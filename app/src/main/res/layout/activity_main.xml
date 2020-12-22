@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin">
+
+
+    <TextView
+        android:id="@+id/box_one_text"
+        style="@style/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/box_1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box_two_text"
+        style="@style/box"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/box_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
+
+    <TextView
+        android:id="@+id/box_three_text"
+        style="@style/box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/box_3"
+        app:layout_constraintBottom_toTopOf="@+id/box_four_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box_two_text"
+        app:layout_constraintTop_toTopOf="@+id/box_two_text" />
+
+    <TextView
+        android:id="@+id/box_four_text"
+        style="@style/box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/box_4"
+        app:layout_constraintBottom_toTopOf="@+id/box_five_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box_two_text"
+        app:layout_constraintTop_toBottomOf="@+id/box_three_text" />
+
+    <TextView
+        android:id="@+id/box_five_text"
+        style="@style/box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/box_5"
+        app:layout_constraintBottom_toBottomOf="@+id/box_two_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box_two_text"
+        app:layout_constraintTop_toBottomOf="@+id/box_four_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
